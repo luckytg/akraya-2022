@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="script" href="/script.js"> -->
+    <link rel="stylesheet" href="/css/style.css">
+    <title>AKRAYA.com</title>
+</head>
+<body>
+    <div id="heading">
+        <h1>AKRAYA-the art of bussiness</h1>
+        <!-- search bar -->
+            <input  id="search" onkeyup="search()" type="text"  placeholder="search.. " $>
+
+        </div>
+    </div>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            #heading{
+                background-color: #79DAE8;
+                font-size: 20px;
+                display: flex; 
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            #heading::before {
+                content: "";
+                position: absolute;
+                background-color: black;
+                height: 17%;
+                width: 100%;
+                z-index: -1;
+                opacity: 0.75;
+                top: 0;     
+                left: 0;
+            }
+            #heading h1{
+                margin: 10px 0 19px 0;
+            }
+            #search{
+                border: 2px solid black;
+                border-radius: 4px;
+                padding: 3px;
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+    </style>
+
+    <!-- result section 
+         -->
+   <div id="search_res">
+    <div id="search-list">
+            <p>name:<span class="span" id="namecmp"></span></p>
+            <p>origin: <span class="span" id="origin"></span></p>
+            <p>description:<span class="span" id="description"></span></p>
+            <p> rating:<span class="span" id="###"></span></p>
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+               <h1 style="text-align:down;"></h1>
+         
+                <button id="done" type="submit" onclick="hide()" form="nameform" value="Submit">submit</button>
+         
+              </div>
+        </div>
+        
+        <style>
+            #search_res{
+                /* background-color: #0AA1DD; */
+                display: flex;
+                justify-content: center;
+                padding: 30px 0 0 0 ;
+            }
+            #search-list p{
+                font-weight: bold;
+                font-size: 25px;
+            }
+            .span{
+                font-weight: normal;
+            }
+            button{
+                border: 2px solid red;
+                border-radius: 3px;
+                font-size: 20px;
+                padding: 5px;
+            }
+            button:hover{
+                background-color: blanchedalmond;
+                color: black;
+            }
+        </style>
+        </div>
+    </div>
+</body>
+<script>
+    function hide() {
+        var tbh=document.getElementById("done");
+        tbh.style.display="none";
+    }
+</script>
+<script src="/script.js"></script>
+</html>

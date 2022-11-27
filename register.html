@@ -1,0 +1,77 @@
+<Html>
+<head>
+<title>
+Registration Page
+</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1 style="text-align:center;">ENTER YOUR DETAILS HERE</h1>
+<br>
+<form>
+<label> Firstname </label>
+<input id="name" type="text" name="firstname" size="15"/> <br>
+<label> Middlename: </label>
+<input type="text" name="middlename" size="15"/> <br>
+<label> Lastname: </label>
+<input type="text" name="lastname" size="15"/> <br> 
+
+<label>
+Seller type
+</label>
+<select>
+
+<option value="Manufacturer">Manufacturer</option>
+<option value="Contractor">Contractor</option>
+<option value="Small Bussiness">Small Bussiness</option>
+<option value="Pvt. Ltd.">Pvt. Ltd.</option>
+<option value="Individual">Individual</option>
+</select>
+<br>
+
+<label>
+Phone :
+</label>
+<input type="text" name="country code"  value="+91" size="2"/>
+<input type="text" name="phone" size="10"/>  <br>
+Address
+
+<textarea id="addrs" cols="35" rows="5" value="address">
+</textarea>
+Email:
+<input type="email" id="email" name="email"/> <br>
+Password:
+<input type="Password" id="pass" name="pass"> <br>
+Re-type password:
+<input type="Password" id="repass" name="repass"> <br>
+<!-- <input id="submit"  type="button" onclick="addnew();" value="Submit" /> -->
+<p id="button"><a href="submitted.html" >submit</a></p>
+</form>
+
+</body>
+<style>
+  form{
+    font-size: 25px;
+  }
+  input,textarea,option,select{
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+  }
+  #button{
+    border: 2px sloid black;
+    border-radius: 3px;
+    size: 35px;
+    margin-bottom: 10px;
+  }
+#button a{
+  font-size: 40px;
+  text-decoration: none;
+  background-color: black;
+  background-blend-mode: color-burn;
+  text-decoration-color: white;
+}
+
+</style>
+<script src="/script.js"></script>
+</html>
